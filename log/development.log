@@ -11,3 +11,83 @@ Migrating to CreateGoals (20220928235638)
   [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-09-29 00:13:21.454611"], ["updated_at", "2022-09-29 00:13:21.454611"]]
   [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-28 20:14:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 182.7ms | Allocations: 634)
+Completed 200 OK in 332ms (Views: 298.0ms | ActiveRecord: 0.0ms | Allocations: 5107)
+
+
+Started GET "/" for ::1 at 2022-09-28 20:15:35 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1520)
+  Rendered layout layouts/application.html.erb (Duration: 1461.3ms | Allocations: 88334)
+Completed 200 OK in 1475ms (Views: 1465.9ms | ActiveRecord: 0.8ms | Allocations: 90173)
+
+
+Started GET "/goals/new" for ::1 at 2022-09-28 20:15:40 -0400
+Processing by GoalsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/new.html.erb within layouts/application
+  Rendered goals/_form.html.erb (Duration: 32.6ms | Allocations: 4368)
+  Rendered goals/new.html.erb within layouts/application (Duration: 38.1ms | Allocations: 4721)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 7018)
+Completed 200 OK in 106ms (Views: 49.2ms | ActiveRecord: 1.0ms | Allocations: 11335)
+
+
+Started POST "/goals" for ::1 at 2022-09-28 20:15:45 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"test"}, "commit"=>"Create Goal"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:27:in `block in create'
+  [1m[36mGoal Create (1.1ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["goal", "test"], ["created_at", "2022-09-29 00:15:45.738461"], ["updated_at", "2022-09-29 00:15:45.738461"]]
+  ↳ app/controllers/goals_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/goals/1
+Completed 302 Found in 10ms (ActiveRecord: 2.7ms | Allocations: 3701)
+
+
+Started GET "/goals/1" for ::1 at 2022-09-28 20:15:45 -0400
+Processing by GoalsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 3.8ms | Allocations: 202)
+  Rendered goals/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1549)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3831)
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 6636)
+
+
+Started GET "/goals" for ::1 at 2022-09-28 20:16:01 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered goals/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 995)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3179)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 3484)
+
+
+Started GET "/" for ::1 at 2022-10-02 16:47:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 1.3ms | Allocations: 232)
+  Rendered goals/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 6361)
+  Rendered layout layouts/application.html.erb (Duration: 3172.6ms | Allocations: 163983)
+Completed 200 OK in 3189ms (Views: 3175.8ms | ActiveRecord: 1.3ms | Allocations: 168166)
+
+

@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <% if flash[:notice] %>
+      noticification
+
+
+    <% end %>
     <%= yield %>
   </body>
 </html>
