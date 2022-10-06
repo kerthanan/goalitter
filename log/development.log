@@ -91,3 +91,1295 @@ Processing by GoalsController#index as HTML
 Completed 200 OK in 3189ms (Views: 3175.8ms | ActiveRecord: 1.3ms | Allocations: 168166)
 
 
+Started GET "/" for ::1 at 2022-10-02 17:14:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 1.0ms | Allocations: 232)
+  Rendered goals/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 6363)
+  Rendered layout layouts/application.html.erb (Duration: 391.2ms | Allocations: 62345)
+Completed 200 OK in 418ms (Views: 398.7ms | ActiveRecord: 1.0ms | Allocations: 66575)
+
+
+Started GET "/" for ::1 at 2022-10-02 18:02:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (1.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 1.8ms | Allocations: 232)
+  Rendered goals/index.html.erb within layouts/application (Duration: 74.6ms | Allocations: 6384)
+  Rendered layout layouts/application.html.erb (Duration: 799.7ms | Allocations: 68626)
+Completed 500 Internal Server Error in 825ms (ActiveRecord: 3.7ms | Allocations: 72797)
+
+
+
+NameError - undefined local variable or method `new_tweet_path' for #<ActionView::Base:0x0000000000c2b0>
+              '.freeze;@output_buffer.append=( link_to 'New Goal', new_tweet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                   ^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/875ff08b28b4ee32/variables" for ::1 at 2022-10-02 18:02:48 -0400
+Started GET "/" for ::1 at 2022-10-02 18:03:27 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.9ms | Allocations: 156)
+  Rendered goals/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1607)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 11754)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.1ms | Allocations: 12664)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c418>
+              '.freeze;@output_buffer.append=( link_to 'New Goal', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                   ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/1583021622710c35/variables" for ::1 at 2022-10-02 18:03:27 -0400
+Started GET "/" for ::1 at 2022-10-02 18:03:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (1.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered goals/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 6403)
+  Rendered layout layouts/application.html.erb (Duration: 327.7ms | Allocations: 68048)
+Completed 500 Internal Server Error in 350ms (ActiveRecord: 1.7ms | Allocations: 72219)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c2b0>
+              '.freeze;@output_buffer.append=( link_to 'New Goal', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                   ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/1d8a17b3c1c569aa/variables" for ::1 at 2022-10-02 18:03:50 -0400
+Started GET "/" for ::1 at 2022-10-02 18:05:02 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered goals/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1095)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 10776)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms | Allocations: 11094)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c378>
+              '.freeze;@output_buffer.append=( link_to 'New Goal', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                   ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/405049b040e81d74/variables" for ::1 at 2022-10-02 18:05:03 -0400
+Started GET "/" for ::1 at 2022-10-02 18:05:11 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.8ms | Allocations: 156)
+  Rendered goals/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1605)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 11742)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.3ms | Allocations: 12650)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c468>
+              '.freeze;@output_buffer.append=( link_to 'New Tweeet', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                     ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/3c7eecd56d3154f4/variables" for ::1 at 2022-10-02 18:05:12 -0400
+Started GET "/goals" for ::1 at 2022-10-02 18:05:15 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered goals/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1091)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 10767)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.1ms | Allocations: 11083)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c4e0>
+              '.freeze;@output_buffer.append=( link_to 'New Tweeet', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                     ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/11e42be49bd1ed9c/variables" for ::1 at 2022-10-02 18:05:15 -0400
+Started POST "/__better_errors/3c7eecd56d3154f4/variables" for ::1 at 2022-10-02 18:05:16 -0400
+Started GET "/" for ::1 at 2022-10-02 18:05:18 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered goals/index.html.erb within layouts/application (Duration: 32.9ms | Allocations: 1084)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 10763)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.1ms | Allocations: 11068)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c558>
+              '.freeze;@output_buffer.append=( link_to 'New Tweeet', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                     ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/e589cc42cd232757/variables" for ::1 at 2022-10-02 18:05:18 -0400
+Started GET "/" for ::1 at 2022-10-02 18:05:29 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.9ms | Allocations: 156)
+  Rendered goals/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1596)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 11736)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.1ms | Allocations: 12630)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c620>
+              '.freeze;@output_buffer.append=( link_to 'New Goal', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                   ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/70743e0b6d3297d6/variables" for ::1 at 2022-10-02 18:05:30 -0400
+Started GET "/" for ::1 at 2022-10-02 18:10:52 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.6ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.9ms | Allocations: 156)
+  Rendered goals/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1777)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 11907)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.9ms | Allocations: 12801)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c760>
+            '.freeze;@output_buffer.append=( link_to 'New Goal', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                 ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/1ace338be24fe6b6/variables" for ::1 at 2022-10-02 18:10:52 -0400
+Started GET "/" for ::1 at 2022-10-02 18:11:00 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 1.3ms | Allocations: 156)
+  Rendered goals/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1593)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 11726)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.2ms | Allocations: 12621)
+
+
+
+NameError - undefined local variable or method `new_tweeet_path' for #<ActionView::Base:0x0000000000c828>
+              '.freeze;@output_buffer.append=( link_to 'New Goal', new_tweeet_path, class: "button is-info is-inverted" );@output_buffer.safe_append='
+                                                                   ^^^^^^^^^^^^^^^
+Did you mean?  new_goal_path:
+  app/views/layouts/application.html.erb:40
+
+Started POST "/__better_errors/d7ffa8983d36ef11/variables" for ::1 at 2022-10-02 18:11:00 -0400
+Started GET "/" for ::1 at 2022-10-02 18:11:16 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.9ms | Allocations: 156)
+  Rendered goals/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1603)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 6990)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms | Allocations: 7966)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-4cab6902cc03d8ec1af962dff93f751c8d368c1d1dab256bdd00835cfc030d63.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-4cab6902cc03d8ec1af962dff93f751c8d368c1d1dab256bdd00835cfc030d63.css"):
+  
+Started GET "/" for ::1 at 2022-10-04 20:42:35 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered goals/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1048)
+  Rendered layout layouts/application.html.erb (Duration: 1910.4ms | Allocations: 39463)
+Completed 200 OK in 1913ms (Views: 1911.3ms | ActiveRecord: 6.0ms | Allocations: 39773)
+
+
+Started GET "/" for ::1 at 2022-10-04 20:46:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.8ms | Allocations: 232)
+  Rendered goals/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 6375)
+  Rendered layout layouts/application.html.erb (Duration: 2480.2ms | Allocations: 102745)
+Completed 200 OK in 2497ms (Views: 2486.3ms | ActiveRecord: 1.0ms | Allocations: 106975)
+
+
+Started GET "/" for ::1 at 2022-10-05 17:52:43 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/index.html.erb:6
+  Rendered goals/_goal.html.erb (Duration: 0.9ms | Allocations: 23)
+  Rendered goals/index.html.erb within layouts/application (Duration: 34.0ms | Allocations: 1251)
+  Rendered layout layouts/application.html.erb (Duration: 68.2ms | Allocations: 6082)
+Completed 200 OK in 84ms (Views: 73.8ms | ActiveRecord: 7.6ms | Allocations: 6424)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:13:21 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_feed.html.erb (Duration: 117.4ms | Allocations: 12826)
+  Rendered goals/index.html.erb within layouts/application (Duration: 120.4ms | Allocations: 13240)
+  Rendered layout layouts/application.html.erb (Duration: 120.8ms | Allocations: 13326)
+Completed 500 Internal Server Error in 129ms (Allocations: 14218)
+
+
+
+NameError - undefined local variable or method `goals' for #<ActionView::Base:0x0000000000c490>
+'.freeze; goals.each do | goal | 
+          ^^^^^
+Did you mean?  @goals:
+  app/views/goals/_feed.html.erb:15
+  app/views/goals/index.html.erb:4
+
+Started POST "/__better_errors/1d35d443e0ac66c9/variables" for ::1 at 2022-10-05 18:13:21 -0400
+Started GET "/" for ::1 at 2022-10-05 18:13:41 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 6.4ms | Allocations: 1001)
+  Rendered goals/_goal.html.erb (Duration: 1.1ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2067)
+  Rendered layout layouts/application.html.erb (Duration: 66.9ms | Allocations: 7507)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 1.9ms | Allocations: 8432)
+
+
+Started GET "/goals/1" for ::1 at 2022-10-05 18:14:18 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.9ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered goals/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 962)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5863)
+Completed 200 OK in 29ms (Views: 9.2ms | ActiveRecord: 0.9ms | Allocations: 14325)
+
+
+Started GET "/goals/new" for ::1 at 2022-10-05 18:14:22 -0400
+Processing by GoalsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/new.html.erb within layouts/application
+  Rendered goals/_form.html.erb (Duration: 19.7ms | Allocations: 3885)
+  Rendered goals/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 4182)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 9101)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 9492)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:15:16 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 2.2ms | Allocations: 838)
+  Rendered goals/_goal.html.erb (Duration: 1.1ms | Allocations: 150)
+  Rendered goals/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1892)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 7260)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms | Allocations: 8193)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:18:07 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 3.1ms | Allocations: 838)
+  Rendered goals/_goal.html.erb (Duration: 3.2ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1891)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 7256)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms | Allocations: 8147)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:19:47 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 1.0ms | Allocations: 575)
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 975)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5762)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms | Allocations: 6056)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:23:14 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 2.2ms | Allocations: 831)
+  Rendered goals/_goal.html.erb (Duration: 0.6ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1889)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 7313)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.1ms | Allocations: 8181)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:28:02 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 2.3ms | Allocations: 1021)
+  Rendered goals/_goal.html.erb (Duration: 3.4ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2017)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 7374)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.2ms | Allocations: 8265)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:37:04 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 5.9ms | Allocations: 1413)
+  Rendered goals/_goal.html.erb (Duration: 0.8ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2403)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 7834)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.7ms | Allocations: 8722)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:37:07 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 1.4ms | Allocations: 762)
+  Rendered goals/_goal.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1167)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6032)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 6328)
+
+
+Started GET "/goals/1" for ::1 at 2022-10-05 18:37:15 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered goals/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 766)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5545)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 6406)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:38:04 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 1.4ms | Allocations: 762)
+  Rendered goals/_goal.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1137)
+  Rendered layout layouts/application.html.erb (Duration: 1930.4ms | Allocations: 39474)
+Completed 200 OK in 1932ms (Views: 1931.4ms | ActiveRecord: 0.1ms | Allocations: 39745)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:38:09 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 1.5ms | Allocations: 762)
+  Rendered goals/_goal.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5942)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 6213)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:38:15 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 3.0ms | Allocations: 762)
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1155)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6032)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 6303)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:42:41 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 2.1ms | Allocations: 762)
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1161)
+  Rendered layout layouts/application.html.erb (Duration: 1869.6ms | Allocations: 39425)
+Completed 200 OK in 1871ms (Views: 1870.1ms | ActiveRecord: 0.1ms | Allocations: 39696)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:42:56 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 2.5ms | Allocations: 762)
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1146)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5976)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 6247)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:42:57 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 1.3ms | Allocations: 762)
+  Rendered goals/_goal.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5939)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 6211)
+
+
+Started GET "/" for ::1 at 2022-10-05 18:48:26 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 6.1ms | Allocations: 1404)
+  Rendered goals/_goal.html.erb (Duration: 0.8ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2405)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 7766)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 1.0ms | Allocations: 8631)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:02:31 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.9ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 30.1ms | Allocations: 1404)
+  Rendered goals/_goal.html.erb (Duration: 1.4ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 45.1ms | Allocations: 2394)
+  Rendered layout layouts/application.html.erb (Duration: 71.1ms | Allocations: 7762)
+Completed 200 OK in 89ms (Views: 80.1ms | ActiveRecord: 3.9ms | Allocations: 8649)
+
+
+Started GET "/goals/1" for ::1 at 2022-10-05 19:02:41 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered goals/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5591)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 6475)
+
+
+Started GET "/goals/1/edit" for ::1 at 2022-10-05 19:02:45 -0400
+Processing by GoalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/edit.html.erb within layouts/application
+  Rendered goals/_form.html.erb (Duration: 2.8ms | Allocations: 1221)
+  Rendered goals/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1548)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 6410)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.1ms | Allocations: 7204)
+
+
+Started GET "/goals/1" for ::1 at 2022-10-05 19:02:48 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered goals/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 568)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5347)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.1ms | Allocations: 6086)
+
+
+Started GET "/goals/1" for ::1 at 2022-10-05 19:02:52 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered goals/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 580)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5359)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 6099)
+
+
+Started GET "/goals/1" for ::1 at 2022-10-05 19:03:44 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 2.0ms | Allocations: 156)
+  Rendered goals/show.html.erb within layouts/application (Duration: 26.3ms | Allocations: 1160)
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 6574)
+Completed 200 OK in 104ms (Views: 91.7ms | ActiveRecord: 0.1ms | Allocations: 7919)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:10:08 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.6ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 5.9ms | Allocations: 1403)
+  Rendered goals/_goal.html.erb (Duration: 0.8ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 2396)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 7836)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 1.0ms | Allocations: 8723)
+
+
+Started GET "/goals/1/edit" for ::1 at 2022-10-05 19:17:14 -0400
+Processing by GoalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:63:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/edit.html.erb within layouts/application
+  Rendered goals/_form.html.erb (Duration: 19.6ms | Allocations: 1343)
+  Rendered goals/edit.html.erb within layouts/application (Duration: 23.2ms | Allocations: 1729)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 7176)
+Completed 200 OK in 77ms (Views: 57.4ms | ActiveRecord: 1.2ms | Allocations: 8679)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:24:00 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.8ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 9.1ms | Allocations: 1403)
+  Rendered goals/_goal.html.erb (Duration: 0.9ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 2396)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 7851)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 1.2ms | Allocations: 8738)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:24:24 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 7.3ms | Allocations: 1233)
+  Rendered goals/_goal.html.erb (Duration: 1.0ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2235)
+  Rendered layout layouts/application.html.erb (Duration: 99.1ms | Allocations: 7723)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.5ms | Allocations: 8615)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:25:35 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 2.6ms | Allocations: 1233)
+  Rendered goals/_goal.html.erb (Duration: 0.7ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2223)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 7738)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.1ms | Allocations: 8630)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:26:25 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 5.8ms | Allocations: 1233)
+  Rendered goals/_goal.html.erb (Duration: 0.6ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2220)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 7659)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.1ms | Allocations: 8551)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:28:55 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 4.0ms | Allocations: 1233)
+  Rendered goals/_goal.html.erb (Duration: 0.9ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2235)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 7700)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms | Allocations: 8591)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:29:03 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 5.8ms | Allocations: 1233)
+  Rendered goals/_goal.html.erb (Duration: 0.8ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2227)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 7716)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 8607)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:31:01 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 5.3ms | Allocations: 1236)
+  Rendered goals/_who-to-follow.html.erb (Duration: 1.0ms | Allocations: 151)
+  Rendered goals/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1784)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7470)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.2ms | Allocations: 8361)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:31:13 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 5.6ms | Allocations: 1233)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.8ms | Allocations: 153)
+  Rendered goals/_goal.html.erb (Duration: 0.8ms | Allocations: 149)
+  Rendered goals/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 7950)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms | Allocations: 8841)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:31:15 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 1.4ms | Allocations: 762)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/_goal.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered goals/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1202)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 6059)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.1ms | Allocations: 6354)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:31:25 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 3.2ms | Allocations: 1236)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.6ms | Allocations: 152)
+  Rendered goals/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1779)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 7469)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.1ms | Allocations: 8337)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:38:35 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.5ms | Allocations: 121)
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 4.7ms | Allocations: 1400)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.7ms | Allocations: 152)
+  Rendered goals/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2200)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 7964)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.7ms | Allocations: 8852)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:46:35 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 1.8ms | Allocations: 122)
+  Rendered goals/_form.html.erb (Duration: 522.5ms | Allocations: 21158)
+  Rendered goals/_feed.html.erb (Duration: 524.8ms | Allocations: 21618)
+  Rendered goals/index.html.erb within layouts/application (Duration: 550.3ms | Allocations: 22152)
+  Rendered layout layouts/application.html.erb (Duration: 550.7ms | Allocations: 22237)
+Completed 500 Internal Server Error in 566ms (Allocations: 23102)
+
+
+
+NoMethodError - undefined method `model_name' for nil:NilClass
+      convert_to_model(record_or_class).model_name
+                                       ^^^^^^^^^^^:
+  app/views/goals/_form.html.erb:1
+  app/views/goals/_feed.html.erb:9
+  app/views/goals/index.html.erb:5
+
+Started POST "/__better_errors/fcf2138230c0ccbe/variables" for ::1 at 2022-10-05 19:46:36 -0400
+Started GET "/" for ::1 at 2022-10-05 19:49:07 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered goals/_form.html.erb (Duration: 5.4ms | Allocations: 2707)
+  Rendered goals/_feed.html.erb (Duration: 5.6ms | Allocations: 2774)
+  Rendered goals/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2914)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2999)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms | Allocations: 5562)
+
+
+
+NoMethodError - undefined method `error_notifications' for #<SimpleForm::FormBuilder:0x0000000112743840 @nested_child_index={}, @options={:allow_method_names_outside_object=>false, :skip_default_ids=>false, :builder=>SimpleForm::FormBuilder, :html=>{:class=>[:simple_form, "new_goal"], :id=>"new_goal", :novalidate=>true}, :local=>true}, @template=#<ActionView::Base:0x00000000012228>, @object=#<Goal id: nil, goal: nil, created_at: nil, updated_at: nil>, @object_name="goal", @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>false}, @default_html_options={}, @multipart=nil, @index=nil, @defaults=nil, @wrapper=#<SimpleForm::Wrappers::Root:0x0000000112d3b6d0 @namespace=:wrapper, @components=[#<SimpleForm::Wrappers::Leaf:0x0000000112d3bc48 @namespace=:html5, @options={}>, #<SimpleForm::Wrappers::Leaf:0x0000000112d3bbf8 @namespace=:placeholder, @options={}>, #<SimpleForm::Wrappers::Leaf:0x0000000112d3bba8 @namespace=:maxlength, @options={}>, #<SimpleForm::Wrappers::Leaf:0x0000000112d3bb58 @namespace=:minlength, @options={}>, #<SimpleForm::Wrappers::Leaf:0x0000000112d3bb08 @namespace=:pattern, @options={}>, #<SimpleForm::Wrappers::Leaf:0x0000000112d3bab8 @namespace=:min_max, @options={}>, #<SimpleForm::Wrappers::Leaf:0x0000000112d3ba68 @namespace=:readonly, @options={}>, #<SimpleForm::Wrappers::Leaf:0x0000000112d3ba18 @namespace=:label_input, @options={}>, #<SimpleForm::Wrappers::Single:0x0000000112d3b928 @component=#<SimpleForm::Wrappers::Leaf:0x0000000112d3b8d8 @namespace=:hint, @options={}>, @namespace=:hint, @components=[#<SimpleForm::Wrappers::Leaf:0x0000000112d3b8d8 @namespace=:hint, @options={}>], @defaults={:tag=>:span, :class=>[:hint]}>, #<SimpleForm::Wrappers::Single:0x0000000112d3b798 @component=#<SimpleForm::Wrappers::Leaf:0x0000000112d3b770 @namespace=:error, @options={}>, @namespace=:error, @components=[#<SimpleForm::Wrappers::Leaf:0x0000000112d3b770 @namespace=:error, @options={}>], @defaults={:tag=>:span, :class=>[:error]}>], @defaults={:class=>[:input], :hint_class=>:field_with_hint, :error_class=>:field_with_errors, :valid_class=>:field_without_errors, :tag=>:div, :maxlength=>false, :minlength=>false, :pattern=>false, :min_max=>false, :readonly=>false}, @options={:valid_class=>:field_without_errors, :maxlength=>false, :minlength=>false, :pattern=>false, :min_max=>false, :readonly=>false}>>
+'.freeze;@output_buffer.append=( f.error_notifications );@output_buffer.safe_append='
+                                  ^^^^^^^^^^^^^^^^^^^^
+Did you mean?  error_notification:
+  app/views/goals/_form.html.erb:2
+  app/views/goals/_form.html.erb:1
+  app/views/goals/_feed.html.erb:9
+  app/views/goals/index.html.erb:5
+
+Started POST "/__better_errors/63c073c8841918c1/variables" for ::1 at 2022-10-05 19:49:07 -0400
+Started GET "/" for ::1 at 2022-10-05 19:49:30 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.6ms | Allocations: 122)
+  Rendered goals/_form.html.erb (Duration: 13.6ms | Allocations: 8237)
+  [1m[36mGoal Load (0.4ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 17.4ms | Allocations: 9643)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.8ms | Allocations: 174)
+  Rendered goals/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 10493)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 28231)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.4ms | Allocations: 29184)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:50:24 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.6ms | Allocations: 122)
+  Rendered goals/_form.html.erb (Duration: 15.7ms | Allocations: 7660)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:15
+  Rendered goals/_feed.html.erb (Duration: 18.2ms | Allocations: 8958)
+  Rendered goals/_who-to-follow.html.erb (Duration: 1.0ms | Allocations: 155)
+  Rendered goals/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 9753)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 15267)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.1ms | Allocations: 16182)
+
+
+Started GET "/" for ::1 at 2022-10-05 19:51:15 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.9ms | Allocations: 122)
+  Rendered goals/_form.html.erb (Duration: 12.8ms | Allocations: 7672)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 15.9ms | Allocations: 8975)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.7ms | Allocations: 152)
+  Rendered goals/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 9767)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 15203)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.1ms | Allocations: 16114)
+
+
+Started POST "/goals" for ::1 at 2022-10-05 20:11:34 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"test2\n"}, "commit"=>"Create Goal"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mGoal Create (3.0ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["goal", "test2\n"], ["created_at", "2022-10-06 00:11:35.008269"], ["updated_at", "2022-10-06 00:11:35.008269"]]
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/goals/2
+Completed 302 Found in 19ms (ActiveRecord: 4.5ms | Allocations: 3759)
+
+
+Started GET "/goals/2" for ::1 at 2022-10-05 20:11:35 -0400
+Processing by GoalsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered goals/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1161)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 6188)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.3ms | Allocations: 7808)
+
+
+Started GET "/" for ::1 at 2022-10-05 20:11:37 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 12.8ms | Allocations: 7305)
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 14.9ms | Allocations: 8320)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 8500)
+  Rendered layout layouts/application.html.erb (Duration: 132.9ms | Allocations: 13368)
+Completed 200 OK in 134ms (Views: 133.3ms | ActiveRecord: 0.2ms | Allocations: 13657)
+
+
+Started GET "/" for ::1 at 2022-10-05 20:12:34 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 2.5ms | Allocations: 122)
+  Rendered goals/_form.html.erb (Duration: 11.4ms | Allocations: 7664)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 14.3ms | Allocations: 9152)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.8ms | Allocations: 152)
+  Rendered goals/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 9949)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 15463)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.1ms | Allocations: 16344)
+
+
+Started GET "/" for ::1 at 2022-10-05 20:12:45 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.4ms | Allocations: 122)
+  Rendered goals/_form.html.erb (Duration: 7.7ms | Allocations: 7651)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 10.8ms | Allocations: 9139)
+  Rendered goals/_who-to-follow.html.erb (Duration: 1.0ms | Allocations: 152)
+  Rendered goals/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 9931)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 15367)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.1ms | Allocations: 16278)
+
+
+Started POST "/goals" for ::1 at 2022-10-05 20:13:35 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"terte"}, "commit"=>"Create Goal"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mGoal Create (0.5ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["goal", "terte"], ["created_at", "2022-10-06 00:13:35.440868"], ["updated_at", "2022-10-06 00:13:35.440868"]]
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/goals/%2F
+Completed 302 Found in 13ms (ActiveRecord: 3.4ms | Allocations: 4895)
+
+
+Started GET "/goals/%2F" for ::1 at 2022-10-05 20:13:35 -0400
+Processing by GoalsController#show as TURBO_STREAM
+  Parameters: {"id"=>"/"}
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1659)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Goal with 'id'=/:
+  app/controllers/goals_controller.rb:64:in `set_goal'
+
+Started POST "/goals" for ::1 at 2022-10-05 20:13:40 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"terte"}, "commit"=>"Create Goal"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mGoal Create (0.7ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["goal", "terte"], ["created_at", "2022-10-06 00:13:40.747776"], ["updated_at", "2022-10-06 00:13:40.747776"]]
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/goals/%2F
+Completed 302 Found in 7ms (ActiveRecord: 2.5ms | Allocations: 2254)
+
+
+Started GET "/goals/%2F" for ::1 at 2022-10-05 20:13:40 -0400
+Processing by GoalsController#show as TURBO_STREAM
+  Parameters: {"id"=>"/"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 949)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Goal with 'id'=/:
+  app/controllers/goals_controller.rb:64:in `set_goal'
+
+Started POST "/goals" for ::1 at 2022-10-05 20:13:56 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"terte"}, "commit"=>"Create Goal"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mGoal Create (0.4ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["goal", "terte"], ["created_at", "2022-10-06 00:13:57.137937"], ["updated_at", "2022-10-06 00:13:57.137937"]]
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms | Allocations: 4821)
+
+
+Started GET "/" for ::1 at 2022-10-05 20:13:57 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered goals/_form.html.erb (Duration: 5.8ms | Allocations: 7533)
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 10.3ms | Allocations: 9281)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered goals/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 9527)
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 26885)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.2ms | Allocations: 27595)
+
+
+Started GET "/goals/3" for ::1 at 2022-10-05 20:14:05 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.4ms | Allocations: 147)
+  Rendered goals/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1026)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5951)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 7495)
+
+
+Started DELETE "/goals/3" for ::1 at 2022-10-05 20:14:06 -0400
+Processing by GoalsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mGoal Destroy (1.6ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+Redirected to http://localhost:3000/goals
+Completed 302 Found in 8ms (ActiveRecord: 2.7ms | Allocations: 2522)
+
+
+Started GET "/goals" for ::1 at 2022-10-05 20:14:07 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 9.0ms | Allocations: 7227)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 13.7ms | Allocations: 8587)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 8769)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 13635)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.1ms | Allocations: 13929)
+
+
+Started GET "/goals/4" for ::1 at 2022-10-05 20:14:09 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered goals/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 574)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 5421)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 6161)
+
+
+Started DELETE "/goals/4" for ::1 at 2022-10-05 20:14:10 -0400
+Processing by GoalsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mGoal Destroy (0.4ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+Redirected to http://localhost:3000/goals
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms | Allocations: 2377)
+
+
+Started GET "/goals" for ::1 at 2022-10-05 20:14:10 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 9.4ms | Allocations: 7226)
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 11.8ms | Allocations: 8400)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 8582)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 13519)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.2ms | Allocations: 13808)
+
+
+Started GET "/goals/5" for ::1 at 2022-10-05 20:14:11 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered goals/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 574)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5423)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 6162)
+
+
+Started DELETE "/goals/5" for ::1 at 2022-10-05 20:14:13 -0400
+Processing by GoalsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mGoal Destroy (0.4ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+Redirected to http://localhost:3000/goals
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms | Allocations: 2386)
+
+
+Started GET "/goals" for ::1 at 2022-10-05 20:14:13 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 12.7ms | Allocations: 7226)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 15.1ms | Allocations: 8215)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 8397)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 13268)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.1ms | Allocations: 13557)
+
+
+Started GET "/goals" for ::1 at 2022-10-05 20:15:22 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 8.1ms | Allocations: 7198)
+  [1m[36mGoal Load (0.5ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 13.2ms | Allocations: 8187)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 8366)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 13287)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.5ms | Allocations: 13571)
+
+
+Started POST "/goals" for ::1 at 2022-10-05 20:15:30 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"test3\n"}, "commit"=>"Create Goal"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mGoal Create (0.4ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["goal", "test3\n"], ["created_at", "2022-10-06 00:15:30.474155"], ["updated_at", "2022-10-06 00:15:30.474155"]]
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms | Allocations: 2235)
+
+
+Started GET "/" for ::1 at 2022-10-05 20:15:30 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 6.8ms | Allocations: 7235)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 9.7ms | Allocations: 8409)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 8591)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 13457)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.1ms | Allocations: 13746)
+
+
+Started GET "/" for ::1 at 2022-10-05 20:15:44 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 6.3ms | Allocations: 7204)
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 10.0ms | Allocations: 8378)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 8557)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 13461)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.3ms | Allocations: 13745)
+
+
+Started GET "/goals/6" for ::1 at 2022-10-05 20:15:48 -0400
+Processing by GoalsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  Rendering layout layouts/application.html.erb
+  Rendering goals/show.html.erb within layouts/application
+  Rendered goals/_goal.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered goals/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 568)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5415)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 6154)
+
+
+Started DELETE "/goals/6" for ::1 at 2022-10-05 20:15:49 -0400
+Processing by GoalsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" WHERE "goals"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/goals_controller.rb:64:in `set_goal'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mGoal Destroy (0.4ms)[0m  [1m[31mDELETE FROM "goals" WHERE "goals"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:53:in `destroy'
+Redirected to http://localhost:3000/goals
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms | Allocations: 2389)
+
+
+Started GET "/goals" for ::1 at 2022-10-05 20:15:49 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 8.1ms | Allocations: 7223)
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 11.9ms | Allocations: 8212)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 8394)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 13260)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.2ms | Allocations: 13549)
+
+
+Started GET "/goals" for ::1 at 2022-10-05 20:16:13 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 9.0ms | Allocations: 7213)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 11.4ms | Allocations: 8202)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 8381)
+  Rendered layout layouts/application.html.erb (Duration: 2092.9ms | Allocations: 46838)
+Completed 200 OK in 2096ms (Views: 2093.7ms | ActiveRecord: 0.1ms | Allocations: 47122)
+
+
+Started POST "/goals" for ::1 at 2022-10-05 20:16:20 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"test3"}, "commit"=>"Create Goal"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mGoal Create (0.4ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["goal", "test3"], ["created_at", "2022-10-06 00:16:20.926723"], ["updated_at", "2022-10-06 00:16:20.926723"]]
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms | Allocations: 2198)
+
+
+Started GET "/" for ::1 at 2022-10-05 20:16:20 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered goals/_form.html.erb (Duration: 9.0ms | Allocations: 7216)
+  [1m[36mGoal Load (0.3ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:14
+  Rendered goals/_feed.html.erb (Duration: 12.7ms | Allocations: 8390)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 8572)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 13438)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 13728)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20221006002033)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221006002033"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

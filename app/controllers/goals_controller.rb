@@ -4,6 +4,7 @@ class GoalsController < ApplicationController
   # GET /goals or /goals.json
   def index
     @goals = Goal.all
+    @goal = Goal.new
   end
 
   # GET /goals/1 or /goals/1.json
@@ -25,7 +26,7 @@ class GoalsController < ApplicationController
 
     respond_to do |format|
       if @goal.save
-        format.html { redirect_to goal_url(@goal), notice: "Goal was successfully created." }
+        format.html { redirect_to root_path, notice: "Goal was successfully created." }
         format.json { render :show, status: :created, location: @goal }
       else
         format.html { render :new, status: :unprocessable_entity }

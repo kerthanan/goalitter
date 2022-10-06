@@ -1,14 +1,11 @@
-<p style="color: green"><%= notice %></p>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <%= render 'trends' %>
+      <%= render 'feed' %>
+      <%= render 'who-to-follow' %>
+    </div>
+  </div>
+</section>
 
-<h1>Goals</h1>
 
-<div id="goals">
-  <% @goals.each do |goal| %>
-    <%= render goal %>
-    <p>
-      <%= link_to "Show this goal", goal %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New goal", new_goal_path %>

@@ -1,22 +1,9 @@
-<%= form_with(model: goal) do |form| %>
-  <% if goal.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(goal.errors.count, "error") %> prohibited this goal from being saved:</h2>
-
-      <ul>
-        <% goal.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div>
-    <%= form.label :goal, style: "display: block" %>
-    <%= form.text_area :goal %>
+<%= simple_form_for(@goal) do |f| %>
+<%= f.error_notification %>
+<div class="field">
+  <div class="control">
+    <%= f.input :goal, label: "Write a goal", input_html: { class: "textarea "}, wrapper: false, label_html: {class: "label"}, placeholder: "Compose a new goal..." %>
   </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+</div>
+<%= f.button :submit, class: "button is-info" %>
 <% end %>
