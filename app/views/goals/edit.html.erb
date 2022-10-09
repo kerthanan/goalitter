@@ -1,10 +1,22 @@
-<h1>Editing goal</h1>
-
-<%= render "form", goal: @goal %>
-
-<br>
-
-<div>
-  <%= link_to "Show this goal", @goal %> |
-  <%= link_to "Back to goals", goals_path %>
+<div class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h1 class="title">Editing Goal</h1>
+        <%= render 'form', goal: @goal %>
+      </div>
+    </div>
+  </div>
 </div>
+
+<nav class="navbar is-fixed-bottom">
+  <div class="navbar-menu">
+    <div class="navbar-item">
+      <div class="field is-grouped">
+        <p class="control">
+          <%= link_to 'Cancel', goals_path, class: "button is-dark" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</nav>
