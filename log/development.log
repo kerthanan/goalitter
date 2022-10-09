@@ -6829,3 +6829,266 @@ Processing by GoalsController#index as HTML
 Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.6ms | Allocations: 20161)
 
 
+Started GET "/" for ::1 at 2022-10-09 17:45:44 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/index.html.erb:5
+  [1m[36mGoal Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "goals" WHERE "goals"."user_id" = ?[0m  [["user_id", 10]]
+  ↳ app/views/goals/_profile.html.erb:26
+  Rendered goals/_profile.html.erb (Duration: 5.4ms | Allocations: 772)
+  Rendered goals/_form.html.erb (Duration: 7.0ms | Allocations: 7054)
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  Rendered goals/_feed.html.erb (Duration: 33.9ms | Allocations: 12882)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 44.4ms | Allocations: 14745)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 19886)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 1.8ms | Allocations: 20174)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-10-09 17:45:47 -0400
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.1ms | Allocations: 7899)
+
+
+Started GET "/" for ::1 at 2022-10-09 17:45:47 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  Rendered goals/_trends.html.erb (Duration: 1.1ms | Allocations: 141)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  Rendered goals/_feed.html.erb (Duration: 11.0ms | Allocations: 4963)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 5692)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 10825)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.3ms | Allocations: 11210)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-10-09 17:45:50 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 552)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 27.0ms | Allocations: 23185)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 28404)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.0ms | Allocations: 29903)
+
+
+Started POST "/users" for ::1 at 2022-10-09 17:46:14 -0400
+Processing by RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Arany", "username"=>"aruuma", "email"=>"aru@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aru@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "name", "username", "current_sign_in_ip", "last_sign_in_ip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "aru@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-10-09 21:46:15.019872"], ["updated_at", "2022-10-09 21:46:15.019872"], ["name", "Arany"], ["username", "aruuma"], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 258ms (ActiveRecord: 3.5ms | Allocations: 7167)
+
+
+Started GET "/" for ::1 at 2022-10-09 17:46:15 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/index.html.erb:5
+  [1m[36mGoal Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goals" WHERE "goals"."user_id" = ?[0m  [["user_id", 16]]
+  ↳ app/views/goals/_profile.html.erb:26
+  Rendered goals/_profile.html.erb (Duration: 2.0ms | Allocations: 814)
+  Rendered goals/_form.html.erb (Duration: 6.5ms | Allocations: 7066)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  Rendered goals/_feed.html.erb (Duration: 29.2ms | Allocations: 12910)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 33.8ms | Allocations: 14845)
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | Allocations: 19994)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.7ms | Allocations: 20288)
+
+
+Started POST "/goals" for ::1 at 2022-10-09 17:46:25 -0400
+Processing by GoalsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "goal"=>{"goal"=>"Write email to kerth\n"}, "commit"=>"Create Goal"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/goals_controller.rb:29:in `block in create'
+  [1m[36mGoal Create (0.4ms)[0m  [1m[32mINSERT INTO "goals" ("goal", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["goal", "Write email to kerth\n"], ["created_at", "2022-10-09 21:46:25.683099"], ["updated_at", "2022-10-09 21:46:25.683099"], ["user_id", 16]]
+  ↳ app/controllers/goals_controller.rb:29:in `block in create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/goals_controller.rb:29:in `block in create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.4ms | Allocations: 3498)
+
+
+Started GET "/" for ::1 at 2022-10-09 17:46:25 -0400
+Processing by GoalsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/index.html.erb:5
+  [1m[36mGoal Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goals" WHERE "goals"."user_id" = ?[0m  [["user_id", 16]]
+  ↳ app/views/goals/_profile.html.erb:26
+  Rendered goals/_profile.html.erb (Duration: 1.9ms | Allocations: 772)
+  Rendered goals/_form.html.erb (Duration: 9.1ms | Allocations: 7056)
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  Rendered goals/_feed.html.erb (Duration: 24.4ms | Allocations: 13786)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered goals/index.html.erb within layouts/application (Duration: 29.3ms | Allocations: 15671)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 20816)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 1.1ms | Allocations: 21107)
+
+
+Started GET "/" for ::1 at 2022-10-09 17:48:39 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/index.html.erb:5
+  [1m[36mGoal Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "goals" WHERE "goals"."user_id" = ?[0m  [["user_id", 16]]
+  ↳ app/views/goals/_profile.html.erb:26
+  Rendered goals/_profile.html.erb (Duration: 2.4ms | Allocations: 1025)
+  Rendered goals/_form.html.erb (Duration: 10.9ms | Allocations: 7456)
+  [1m[36mGoal Load (0.2ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  Rendered goals/_feed.html.erb (Duration: 34.1ms | Allocations: 14729)
+  Rendered goals/_who-to-follow.html.erb (Duration: 1.6ms | Allocations: 152)
+  Rendered goals/index.html.erb within layouts/application (Duration: 43.0ms | Allocations: 17622)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 23482)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 1.1ms | Allocations: 24364)
+
+
+Started GET "/" for ::1 at 2022-10-09 17:49:54 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/index.html.erb:5
+  [1m[36mGoal Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "goals" WHERE "goals"."user_id" = ?[0m  [["user_id", 16]]
+  ↳ app/views/goals/_profile.html.erb:26
+  Rendered goals/_profile.html.erb (Duration: 5.6ms | Allocations: 1025)
+  Rendered goals/_form.html.erb (Duration: 11.2ms | Allocations: 7454)
+  [1m[36mGoal Load (0.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals"[0m
+  ↳ app/views/goals/_feed.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  Rendered goals/_feed.html.erb (Duration: 34.0ms | Allocations: 13706)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.6ms | Allocations: 152)
+  Rendered goals/index.html.erb within layouts/application (Duration: 50.4ms | Allocations: 16590)
+  Rendered layout layouts/application.html.erb (Duration: 70.3ms | Allocations: 22457)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 1.1ms | Allocations: 23364)
+
+
+Started GET "/" for ::1 at 2022-10-09 17:58:15 -0400
+Processing by GoalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering goals/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/index.html.erb:5
+  [1m[36mGoal Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "goals" WHERE "goals"."user_id" = ?[0m  [["user_id", 16]]
+  ↳ app/views/goals/_profile.html.erb:26
+  Rendered goals/_profile.html.erb (Duration: 2.8ms | Allocations: 1673)
+  Rendered goals/_form.html.erb (Duration: 12.7ms | Allocations: 7198)
+  [1m[36mGoal Load (1.1ms)[0m  [1m[34mSELECT "goals".* FROM "goals" ORDER BY created_at DESC[0m
+  ↳ app/views/goals/_feed.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/goals/_feed.html.erb:21
+  Rendered goals/_feed.html.erb (Duration: 33.6ms | Allocations: 14484)
+  Rendered goals/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered goals/index.html.erb within layouts/application (Duration: 47.6ms | Allocations: 20377)
+  Rendered layout layouts/application.html.erb (Duration: 108.4ms | Allocations: 37972)
+Completed 200 OK in 118ms (Views: 108.4ms | ActiveRecord: 3.1ms | Allocations: 40941)
+
+

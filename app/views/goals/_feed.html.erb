@@ -27,7 +27,7 @@
 					<small><%=goal.user.username%></small><br/>
 					<p><%= goal.goal %></p>
 				</div>
-				<% if user_signed_in? %>
+				<% if user_signed_in? && current_user.id == goal.user_id %>
 				<nav class="level">
 					<div class="level-left is-mobile">
 						<%= link_to goal, class: "level-item" do %>
@@ -36,8 +36,7 @@
 						<%= link_to edit_goal_path(goal), class: "level-item" do %>
 							<span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
 						<% end %>
-						<%= link_to goal, method: :delete, data: { confirm: "Are you sure you want to delete this goal?"
-							} do %>
+						<%= link_to goal, method: :delete, data: { confirm: "Are you sure you want to delete this goal?"} do %>
 								<span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
 						<% end %>
 					</div>

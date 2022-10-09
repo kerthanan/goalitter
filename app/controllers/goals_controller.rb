@@ -4,7 +4,7 @@ class GoalsController < ApplicationController
 
   # GET /goals or /goals.json
   def index
-    @goals = Goal.all
+    @goals = Goal.all.order("created_at DESC")
     @goal = Goal.new
   end
 
