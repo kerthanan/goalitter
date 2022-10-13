@@ -5,7 +5,11 @@
 			<article class="media">
 				<div class="media-left">
 					<figure class="image is-64x64">
-						<%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
+					<% if current_user.email == "kerthanan20@gmail.com" %>
+						<img src="https://avatars.githubusercontent.com/u/31259755?v=4">
+					<% else %>
+						<img src="https://images.pexels.com/photos/9782645/pexels-photo-9782645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+					<% end %>
 					</figure>
 				</div>
 				<div class="media-content">
