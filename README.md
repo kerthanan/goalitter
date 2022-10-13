@@ -5,7 +5,7 @@ A Twitter for personal goals. Goalitter is a web application that was built on t
 
 ## How it was built
 
-It all started in 2022 when I started dabbling with Ruby on Rails. Goalitter was built using the Ruby on Rails framework for efficiency using the MVC model. Additionally, Bulma was explored and used for styling.
+It all started in 2022 when I started dabbling with Ruby on Rails. Goalitter was built using the Ruby on Rails framework for efficiency using the MVC model. Additionally, Bulma was explored and used for styling =).
 
 
 ## Screenshots
