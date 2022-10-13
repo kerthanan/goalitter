@@ -17,3 +17,7 @@ It all started in 2022 when I started dabbling with Ruby on Rails. Goalitter was
 | Logged In HomePage |   Logged Out HomePage    |
 |:-------------:|:----------:|
 | <img src='./screenshots/loggedinpage.png' width='220' alt='Logged In HomePage' /> | <img src='./screenshots/loggedoutpage.png' width='220' alt='Logged Out HomePage'/> |
+
+| Edit User |   Edit Goal    |
+|:-------------:|:----------:|
+| <img src='./screenshots/edituser.png' width='220' alt='Edit User' /> | <img src='./screenshots/editgoal.png' width='220' alt='Edit Goal'/> |
